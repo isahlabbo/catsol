@@ -40,7 +40,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4"></div>
-            <div class="col-md-4 m-4">
+            <div class="col-md-4">
                 <div class="card-body shadow mt-4" style="background-color: rgb(16, 16, 173);">
                     <div class="text-center"><img src="images/logo.png" alt="" width="300" ></div>
                     @yield('content')
@@ -70,7 +70,7 @@
   <!-- End Google Map -->
   <script>
   // Text to be typed
-  var text = "Idont have account";
+  var text = "I dont have an account";
 
   // Speed of typing (in milliseconds)
   var speed = 50;

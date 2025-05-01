@@ -38,12 +38,12 @@
   <div class="hero_areas">
 
     <!-- header section strats -->
-    <header class="header_section">
+    <header class="header_section" style="background-color: rgb(16, 16, 173); margin: 0px;">
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="{{route('dashboard')}}">
             <span>
-            <img src="{{asset('images/logo.png')}}" alt="" width="350px" >
+            <img src="{{asset('images/logo.png')}}" alt="" height="100" width="200px" >
             </span>
           </a>
 
@@ -56,39 +56,26 @@
               <li class="nav-item active">
                 <a class="nav-link" href="index.html" style="font-family: sans-serif">Home <span class="sr-only">(current)</span></a>
               </li>
+              
               <li class="nav-item">
-                <a class="nav-link" href="about.html" style="color: rgb(46, 55, 169); font-family: sans-serif"> About</a>
+                <a class="nav-link" href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit()" style="color: white; font-family: sans-serif"> <i class="fa fa-sign-out" ></i> Sign Out</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="service.html" style="color: rgb(46, 55, 169); font-family: sans-serif">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="why.html" style="color: rgb(46, 55, 169); font-family: sans-serif">Why Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="team.html" style="color: rgb(46, 55, 169); font-family: sans-serif">Team</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="{{route('login')}}" style="color: rgb(46, 55, 169); font-family: sans-serif"> <i class="fa fa-user" aria-hidden="true"></i> Login</a>
-              </li>
-              <form class="form-inline">
-                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit" style="color: rgb(46, 55, 169)">
-                  <i class="fa fa-search" aria-hidden="true"></i>
-                </button>
+
+              <form id="logout-form" action="{{route('logout')}}" method="post">
+              @csrf
               </form>
             </ul>
           </div>
         </nav>
       </div>
-      <hr style="border: 1px dashed rgb(0, 142, 204);">
     </header>
     <!-- end header section -->
     
 
-<section class="mt-4 p-4">
+<section class="mt-4 ">
     <div class="container">
         <div class="row">
-            <div class="col-md-4"></div>
+            <div class="col-md-2"></div>
             <div class="col-md-8">
             <div class="card-body shadow">
             <h5 class="text text-primary ">Please complete this form about your business and website you need</h5>
