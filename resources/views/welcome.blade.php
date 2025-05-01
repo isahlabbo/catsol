@@ -13,7 +13,7 @@
   <meta name="author" content="" />
   <link rel="shortcut icon" href="images/favicon.png" type="">
 
-  <title> Catsol </title>
+  <title> Catsol ! Welcome </title>
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.css')}}" />
@@ -38,12 +38,12 @@
   <div class="hero_areas">
 
     <!-- header section strats -->
-    <header class="header_section">
+    <header class="header_section" style="background-color: rgb(16, 16, 173);">
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
           <a class="navbar-brand" href="index.html">
             <span>
-            <img src="{{asset('images/logo.png')}}" alt="" width="350px" >
+            <img src="{{asset('images/logo.png')}}" alt="" height="100" >
             </span>
           </a>
 
@@ -54,22 +54,22 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav  ">
               <li class="nav-item active">
-                <a class="nav-link" href="index.html" style="font-family: sans-serif">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="index.html" style="font-family: sans-serif; color: white;">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html" style="color: rgb(46, 55, 169); font-family: sans-serif"> About</a>
+                <a class="nav-link" href="about.html" style="color: rgb(46, 55, 169); font-family: sans-serif; color: white;"> About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="service.html" style="color: rgb(46, 55, 169); font-family: sans-serif">Services</a>
+                <a class="nav-link" href="service.html" style="color: rgb(46, 55, 169); font-family: sans-serif; color: white;">Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="why.html" style="color: rgb(46, 55, 169); font-family: sans-serif">Why Us</a>
+                <a class="nav-link" href="why.html" style="color: rgb(46, 55, 169); font-family: sans-serif; color: white;">Why Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="team.html" style="color: rgb(46, 55, 169); font-family: sans-serif">Team</a>
+                <a class="nav-link" href="team.html" style="color: rgb(46, 55, 169); font-family: sans-serif; color: white;">Team</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{{route('login')}}" style="color: rgb(46, 55, 169); font-family: sans-serif"> <i class="fa fa-user" aria-hidden="true"></i> Login</a>
+                <a class="nav-link" href="{{route('login')}}" style="color: rgb(46, 55, 169); font-family: sans-serif; color: white;"> <i class="fa fa-user" aria-hidden="true"></i> Login</a>
               </li>
               <form class="form-inline">
                 <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit" style="color: rgb(46, 55, 169)">
@@ -80,7 +80,7 @@
           </div>
         </nav>
       </div>
-      <hr style="border: 1px dashed rgb(0, 142, 204);">
+    
     </header>
     <!-- end header section -->
     <!-- slider section -->
