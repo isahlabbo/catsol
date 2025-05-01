@@ -91,19 +91,19 @@
         <img src="images/webdesign.png" alt="" width="480">
         </div>
         <div class="col-md-7">
-        <div  style="color: rgb(46, 55, 169); font-family: sans-Serif; font-size: 50px; font-weight: 900; text-align: left">
-            Your Business  <br>
-            Online Presence <br>
-            Starts Here
+        <div  style="color: rgb(16, 16, 173); font-family: sans-Serif; font-size: 40px; font-weight: 900; text-align: left">
+            We can Create Website  <br>
+            for Your Business, Organizations, and  <br>
+           Institutions
           </div>
-          <p style="color: rgb(0, 142, 204);font-weight: 100; font-family: sans-Serif; font-size: 20px; text-align:justify;">
+          <p style="font-weight: 100; font-family: sans-Serif; font-size: 18px; text-align:justify;">
             We build cutting-edge, user-friendly websites that showcase your business in the best light. Whether you're a small business owner, a startup, or an established school/organization, our custom web design and development services are tailored to enhance your brand’s online presence. Let us create a digital space that truly represents your vision and engages your audience.
           </p>
           <form action="{{route('business.register')}}" method="post">
           @csrf
           <div class="row">
             <div class="col-md-9">
-              <input type="text" name="business" class="form-control" placeholder="Enter Your Business/Organization Name Here">
+              <input type="text" name="business" class="form-control" placeholder="Enter Your Business, Organization, or School Name Here">
             </div>
             <div class="col-md-3">
               <input type="submit" class="btn btn-primary" value="Submit">

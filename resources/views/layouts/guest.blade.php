@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html >
 
 <head>
   <!-- Basic -->
@@ -13,7 +13,7 @@
   <meta name="author" content="" />
   <link rel="shortcut icon" href="images/favicon.png" type="">
 
-  <title> Catsol </title>
+  <title> Catsol ! @yield('title') </title>
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.css')}}" />
@@ -33,7 +33,7 @@
   <link href="{{asset('css/responsive.css')}}" rel="stylesheet" />
 </head>
 
-<body>
+<body style="background-color: rgb(16, 16, 173); color: white;">
 
   
 <section >
@@ -41,9 +41,9 @@
         <div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-4 m-4">
-                <div class="card-body shadow mt-4">
-                    <div class="text-center"><img src="images/favicon.png" alt="" ></div>
-                    {{$slot}}
+                <div class="card-body shadow mt-4" style="background-color: rgb(16, 16, 173);">
+                    <div class="text-center"><img src="images/logo.png" alt="" width="300" ></div>
+                    @yield('content')
                 </div>
             </div>
         </div>
@@ -70,7 +70,7 @@
   <!-- End Google Map -->
   <script>
   // Text to be typed
-  var text = "If you dont have account you can create one here";
+  var text = "Idont have account";
 
   // Speed of typing (in milliseconds)
   var speed = 50;

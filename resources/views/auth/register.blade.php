@@ -1,11 +1,6 @@
-<x-guest-layout>
-    <x-jet-authentication-card>
-        <x-slot name="logo">
-            <h5 class="text text-center text-primary">Register Here to Submit your Business Information</h5>
-        </x-slot>
+@extends('layouts.guest')
 
-        <x-jet-validation-errors class="mb-4" />
-
+@section('content')
         <form method="POST" action="{{ route('register') }}">
             @csrf
 
@@ -47,14 +42,15 @@
             @endif
 
             <div class="flex items-center justify-end mt-4">
-                <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('login') }}">
+                <a class="underline text-sm text-gray-600 hover:text-gray-900" style="color: white;" href="{{ route('login') }}">
                     {{ __('Already registered?') }}
                 </a>
-
-                <x-jet-button class="btn btn-primary">
+            </div>
+            <div class="flex items-center text-center justify-end mt-4">
+                <x-jet-button class="btn btn-primary" style="background-color: white; color: rgb(16, 16, 173) !important;">
                     {{ __('Register') }}
                 </x-jet-button>
+                <a class="btn btn-outline-primary" style="color: white;" href="{{url('/')}}">Home</a>
             </div>
         </form>
-    </x-jet-authentication-card>
-</x-guest-layout>
+   @endsection
